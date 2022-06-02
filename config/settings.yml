@@ -1,4 +1,4 @@
 plugins:
-  plugin_name_enabled:
+  web3_building_blocks_enabled:
     default: true
     client: true
