@@ -30,6 +30,8 @@ clone this repo next to these two other repositories:
 
 follow this [guide](https://meta.discourse.org/t/beginners-guide-to-install-discourse-for-development-using-docker/102009) to install your discourse developer instance.
 
+search the admin settings for "cors" and add "http://localhost:3001" to the "cors origins" setting. This is necessary so you can run the vite dev server and cors does not block you from making requests to the discourse server.
+
 **Folder Structure**
 
 ```
