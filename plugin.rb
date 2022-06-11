@@ -25,6 +25,7 @@ after_initialize do
       require_relative "app/controllers/editor_controller.rb"
 
     Web3BuildingBlocks::Engine.routes.draw do
+      get '/logged_in' => 'editor#logged_in'
       get '/editor(/*all)' => 'editor#index'
     end
 
