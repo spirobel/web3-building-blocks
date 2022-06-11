@@ -25,7 +25,7 @@ after_initialize do
       require_relative "app/controllers/editor_controller.rb"
 
     Web3BuildingBlocks::Engine.routes.draw do
-      get '/editor' => 'editor#index'
+      get '/editor(/*all)' => 'editor#index'
     end
 
     Discourse::Application.routes.append do
